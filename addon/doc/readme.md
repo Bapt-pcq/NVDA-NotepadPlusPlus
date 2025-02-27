@@ -43,6 +43,4 @@ Pour compiler cet add-on à partir du code source :
    ```
 3. Le fichier `.nvda-addon` généré pourra être installé directement dans NVDA.
 
-## Licence
-Cet add-on est sous licence GPLv2.
 
