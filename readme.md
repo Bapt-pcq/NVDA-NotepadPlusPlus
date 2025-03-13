@@ -1,36 +1,38 @@
-# Notepad++ AppModule for NVDA
+# Technical Documentation - Notepad++ NVDA AppModule #
 
-## Description
-This add-on enhances the accessibility of **Notepad++ 32-bit** under **NVDA**, providing advanced features for navigating and editing Python code. It is designed to work with **Python 32-bit**, ensuring optimal compatibility with NVDA.
+## Overview ##
+This document describes the functionality of the Python module developed to interact with Notepad++ through NVDA. It includes several features for navigating, selecting, and manipulating functions and classes in Python code.
 
-### Features
-- Improved navigation in Python code (jumping between functions and classes).
-- Quick selection and deletion of classes and functions.
-- Direct execution of Python code in a terminal.
-- Advanced indentation management (moving and selecting based on indentation level).
+## Keyboard Shortcuts ##
 
-## Installation
-1. Download the `.nvda-addon` file.
-2. Open NVDA and go to `Tools > Manage add-ons`.
-3. Click `Install`, select the downloaded file, and follow the instructions.
+### Navigation ###
+- **NVDA+F2**: Move the cursor to the next function declaration  
+- **Shift+F2**: Move the cursor to the previous function declaration  
+- **F7**: Move the cursor to the next class declaration  
+- **Shift+F7**: Move the cursor to the previous class declaration  
+- **Alt+DownArrow**: Move the cursor to the next indentation level  
+- **Alt+UpArrow**: Move the cursor to the previous indentation level  
+- **Control+Alt+DownArrow**: Move the cursor to the next line with the same indentation level  
+- **Control+Alt+UpArrow**: Move the cursor to the previous line with the same indentation level  
+- **Alt+Home**: Move the cursor to the first line of the current indentation level  
+- **Alt+End**: Move the cursor to the last line of the current indentation level  
 
-## Usage
-### Keyboard Shortcuts
-- **NVDA+F2**: Move to the next function.
-- **Shift+F2**: Move to the previous function.
-- **F7**: Move to the next class.
-- **Shift+F7**: Move to the previous class.
-- **Ctrl+Shift+R**: Select a class.
-- **Ctrl+R**: Select a function.
-- **Ctrl+Shift+Delete**: Delete a class after confirmation.
-- **Ctrl+Delete**: Delete a function after confirmation.
-- **F5**: Execute the code in a terminal.
-- **Alt+Down Arrow**: Move to the next indentation level.
-- **Alt+Up Arrow**: Move to the previous indentation level.
-- **Ctrl+Alt+Down Arrow**: Move to the next indented line.
-- **Ctrl+Alt+Up Arrow**: Move to the previous indented line.
-- **Shift+Alt+Down Arrow**: Select up to the next indentation level.
-- **Shift+Alt+Up Arrow**: Select up to the previous indentation level.
-- **Alt+Home**: Move to the first line of the current indentation level.
-- **Alt+End**: Move to the last line of the current indentation level.
+### Selection ###
+- **Control+Shift+R**: Select the current class  
+- **Control+R**: Select the current function  
+- **Shift+Alt+DownArrow**: Select up to the next indentation level  
+- **Shift+Alt+UpArrow**: Select up to the previous indentation level  
 
+### Deletion ###
+- **Control+Shift+Delete**: Delete the current class  
+- **Control+Delete**: Delete the current function  
+
+### Execution ###
+- **Control+F5**: Execute Python code in a terminal  
+
+## Notes ##
+This module is designed to enhance productivity while working with Python code in Notepad++ using NVDA. Each shortcut is carefully assigned to streamline navigation and code manipulation.
+
+---
+
+For further details or contributions, please refer to the project's documentation.
